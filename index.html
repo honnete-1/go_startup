@@ -928,3 +928,29 @@
       <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
     </svg>
   </a>
+   <!--  JAVASCRIPT  -->
+  <script>
+    // Toggle the mobile menu when hamburger button is clicked
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Show the back-to-top button after scrolling down 300px
+    const backToTop = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        backToTop.classList.remove('hidden');
+        backToTop.classList.add('flex');
+      } else {
+        backToTop.classList.add('hidden');
+        backToTop.classList.remove('flex');
+      }
+    });
+  </script>
+
+</body>
+</html>
