@@ -116,3 +116,32 @@
           </div>
 
         </div>
+                <!-- Image column -->
+        <!--
+          I added w-[90vw] that makes the image 90% of the viewport width on mobile.
+          On large screens (lg:w-1/2) it takes half the container.
+        -->
+        <div class="w-[90vw] mx-auto lg:w-1/2 lg:mx-0">
+          <div class="relative">
+
+            <!-- main hero image -->
+            <img
+              src="https://go-tailwind.preview.uideck.com/src/images/hero/image-2.jpg"
+              alt="Hero image"
+              class="w-full rounded-2xl shadow-2xl"
+            />
+
+            <!-- small overlapping image at the bottom left -->
+            <img
+              src="https://go-tailwind.preview.uideck.com/src/images/hero/image-1.jpg"
+              alt="Hero accent image"
+              class="hidden sm:block absolute -bottom-6 -left-6 w-2/5 rounded-xl border-4 border-gray-950 shadow-xl"
+            />
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--  end of hero section   -->
